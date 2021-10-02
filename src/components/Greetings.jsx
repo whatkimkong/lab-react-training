@@ -1,24 +1,30 @@
-// import React from 'react';
+import React from 'react';
 
-// const greetingsStyle = {
-//   backgroundColor: '#bbaabb',
-//   color: 'white',
-//   width: '20%',
-//   padding: '10px 20px',
-//   margin: '10px 20px',
-// };
+const greetingsStyle = {
+    border: 'solid',
+    borderWidth: '2px',
+    width: '80%',
+    display: 'flex',
+    flexDirection: 'row',
+    textAlign: 'left',
+    justifyContent: 'center',
+    margin: '10px',
+};
 
-// function Greetings({ lang, children }) {
-//   return (
-//     <div style={greetingsStyle}>
-//       <h4>{lang}</h4>
-//       <p>{children}</p>
-//     </div>
-//   );
-// }
+// IN A FUNCTION WE DO NOT USE THISSSSS
+function Greetings(props) {
+    const {lang, children } = props; // just so we understand but better to use the destructuring in the first line
+  return (
+    <div style={greetingsStyle}>
+      { lang === "de" && <h6>Hallo {children}</h6>}
+      { lang === "fr" && <h6>Bonjour {children} </h6>}
+      { lang === "en" && <h6>Hey there, {children} </h6>}
+      { lang === "es" && <h6>Hola {children} </h6>}
+    </div>
+  );
+}
 
-// export default Greetings;
-
+export default Greetings;
 
 // - `lang`: A string that could be ,`"de"`,`"en"`,`"es"`,`"fr"`
 // - `children`: A text

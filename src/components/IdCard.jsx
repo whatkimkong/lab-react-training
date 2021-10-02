@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 const idCardStyle = {
     border: 'solid',
-    borderWidth: '1px',
-    width: '100%',
+    borderWidth: '2px',
+    width: '40%',
     display: 'flex',
     flexDirection: 'row',
     textAlign: 'left',
