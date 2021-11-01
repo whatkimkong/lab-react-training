@@ -15,10 +15,10 @@ class Random extends Component {
     render() {
         const { min , max } = this.props;
         // js code here
-        const random = Math.floor(Math.random() * (max-min+1) + min) // why??? add the 1 to include the maximum... weird
+        const randomNumber = Math.floor(Math.random() * (max-min+1) + min) // why??? add the 1 to include the maximum... weird
         return (
             <div style={randomStyle}>
-                <h3>Random value between {min} and {max} ={'>'} {random} </h3>
+                <h3>Random value between {min} and {max} ={'>'} {randomNumber} </h3>
             </div>
         )
     }
