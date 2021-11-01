@@ -24,7 +24,7 @@ function CreditCard({type, number, expirationMonth,expirationYear, bank, owner, 
         <div style={creditCardStyle}>
             <div>
             <h4 style={typeStyle}>{type}</h4>
-            <h2>**** **** **** {number.slice(-4)}</h2>
+            <h2>•••• •••• •••• {number.slice(-4)}</h2>
             <p style={pStyle}>Expires: {expirationMonth}/{expirationYear}  {bank}</p>
             <p style={pStyle}> {owner}</p>
             </div>
