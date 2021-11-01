@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import React from 'react';
 
 function BoxColor({r, g, b}) {
