@@ -1,5 +1,18 @@
+import React from 'react';
+
+function BoxColor({r, g, b}) {
+    return (
+        <div>
+            
+
+        </div>
+    );
+}
+
+// add code logic - ternary operators - if its german do this if english do this...
 
 
+export default BoxColor;
 
 
 // - `r`: A number between 0 and 255 representing the amount of red
